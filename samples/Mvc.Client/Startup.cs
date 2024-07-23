@@ -61,6 +61,11 @@ public class Startup(IConfiguration configuration, IHostEnvironment hostingEnvir
         {
             options.ClientId = configuration["Dropbox:ClientId"] ?? string.Empty;
             options.ClientSecret = configuration["Dropbox:ClientSecret"] ?? string.Empty;
+        })
+        .AddQuickBooks(options =>
+        {
+            options.ClientId = configuration["QuickBooks:ClientId"] ?? string.Empty;
+            options.ClientSecret = configuration["QuickBooks:ClientSecret"] ?? string.Empty;
         });
 
         services.AddMvc();

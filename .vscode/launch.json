@@ -2,6 +2,12 @@
   "version": "0.2.0",
   "configurations": [
     {
+      "name": "C#: MVC.Client Debug",
+      "type": "dotnet",
+      "request": "launch",
+      "projectPath": "${workspaceFolder}/samples/Mvc.Client/Mvc.Client.csproj"
+    },
+    {
       "name": "Run tests",
       "type": "coreclr",
       "request": "launch",
