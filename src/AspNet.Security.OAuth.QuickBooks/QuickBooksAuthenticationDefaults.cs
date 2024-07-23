@@ -44,6 +44,5 @@ public static class QuickBooksAuthenticationDefaults
     /// <summary>
     /// Default value for <see cref="OAuthOptions.UserInformationEndpoint"/>.
     /// </summary>
-    // public static readonly string UserInformationEndpoint = "https://accounts.platform.intuit.com/v1/openid_connect/userinfo";
-    public static readonly string UserInformationEndpoint = "https://sandbox-accounts.platform.intuit.com/v1/openid_connect/userinfo";
+    public static readonly string UserInformationEndpoint = "https://accounts.platform.intuit.com/v1/openid_connect/userinfo";
 }

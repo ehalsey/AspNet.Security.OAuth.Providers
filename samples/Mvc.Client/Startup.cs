@@ -66,6 +66,7 @@ public class Startup(IConfiguration configuration, IHostEnvironment hostingEnvir
         {
             options.ClientId = configuration["QuickBooks:ClientId"] ?? string.Empty;
             options.ClientSecret = configuration["QuickBooks:ClientSecret"] ?? string.Empty;
+            options.UserInformationEndpoint = "https://sandbox-accounts.platform.intuit.com/v1/openid_connect/userinfo";
         });
 
         services.AddMvc();
